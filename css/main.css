@@ -8,6 +8,25 @@
   --bs-body-bg: #F6F3ED;
 }
 
+body {
+  background-color: var(--bs-body-bg);
+}
+
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+
+.text-light {
+  color: var(--bs-light) !important;
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+  color: var(--bs-light) !important;
+}
+
 .navbar-brand {
   color: #F6F3ED;
 }
@@ -53,3 +72,5 @@ section:not(#hero):not(#cta){
     padding: 100px 0;
   }
 }
+
+
