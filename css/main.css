@@ -2,7 +2,11 @@
 
 /* Set custom variables here */
 
-
+:root {
+  --bs-primary: #2e473a;
+  --bs-light: #f6f3ed;
+  --bs-body-bg: #F6F3ED;
+}
 
 .navbar-brand {
   color: #F6F3ED;
