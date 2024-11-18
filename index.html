@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
   </head>
   <body>
 
@@ -54,7 +56,7 @@
         <div class="container"> 
           <div class="d-flex justify-content-center">
             <div class="text-center mt-1">
-              <h1>Healthy, Delicious Meals Delivered to Your Door – Ready in Minutes!</h1>
+              <h1 id="hero-heading" class="animate__animated">Healthy, Delicious Meals Delivered to Your Door – Ready in Minutes!</h1>
               <p>With Daily Dish, you can enjoy chef-crafted, wholesome meals without the hassle of meal prep, grocery shopping, or cleanup.</p>
               <button type="button" class="btn btn-primary btn-lg">Get Started Today and Save Time!</button>
             </div>
@@ -69,7 +71,7 @@
           <div class="row">
             <div class="col-md-4 mb-4">
               <div class="d-flex flex-column align-items-center">
-                <div class="icon mb-3">
+                <div class="icon mb-3" id="icon-1">
                   <img src="images/meal.svg" alt="Choose Your Menu" width="100" height="auto">
                 </div>
                 <h3>Choose Your Menu</h3>
@@ -78,14 +80,14 @@
             </div>
             <div class="col-md-4 mb-4">
               <div class="d-flex flex-column align-items-center">
-                <div class="icon mb-3">
+                <div class="icon mb-3" id="icon-2">
                   <img src="images/vegetables.svg" alt="Fresh Ingredients Delivered" width="100" height="auto">
                 </div>
                 <h3>Fresh Ingredients Delivered</h3>
                 <p>We source the freshest, highest-quality ingredients and deliver them in perfectly portioned kits. No waste, no hassle.</p>
               </div>
             </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4" id="icon-3">
                   <div class="d-flex flex-column align-items-center">
                     <div class="icon mb-3">
                       <img src="images/plate-fork-spoon.svg" alt="Cook & Enjoy" width="100" height="auto">
@@ -96,7 +98,7 @@
                 </div>
               </div>
 
-          <button type="button" class="btn btn-primary">Pick Your Plan</button>
+          <button type="button" class="btn btn-primary" id="cta-button">Pick Your Plan</button>
         </div>
       </section>
       
