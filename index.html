@@ -265,5 +265,39 @@
     
     <!-- Include Bootstrap JS cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Feature 1: Animate Hero Heading on Page Load
+      const heroHeading = document.getElementById("hero-heading");
+      heroHeading.classList.add("animate__fadeInDown");
+      // Animation will play automatically because the Animate.css library triggers the animation when the class is added.
+
+      // Feature 2: Animate Icons Sequentially
+      const icons = [
+        document.getElementById("icon-1"),
+        document.getElementById("icon-2"),
+        document.getElementById("icon-3"),
+      ];
+
+      icons.forEach((icon, index) => {
+        setTimeout(() => {
+          icon.classList.add("animate__animated", "animate__zoomIn");
+        }, index * 500); // Add a delay of 500ms between each icon animation
+      });
+
+      // Feature 3: Animate Button on Hover
+      const ctaButton = document.getElementById("cta-button");
+      ctaButton.addEventListener("mouseover", () => {
+        ctaButton.classList.add("animate__animated", "animate__pulse");
+
+        // Remove the animation class after it ends to allow re-triggering
+        ctaButton.addEventListener("animationend", () => {
+          ctaButton.classList.remove("animate__pulse");
+        }, { once: true });
+      });
+    });
+  </script>
   </body>
 </html>
